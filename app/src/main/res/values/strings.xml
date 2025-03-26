@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ClassApp</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="a_marvel_character">a marvel character</string>
+    <string name="name">Name: %s</string>
+    <string name="age">Age: %d</string>
+    <string name="power">Power: %s</string>
+    <string name="planet">Planet: %s</string>
+    <string name="enemy">Enemy: %s</string>
+    <string name="alias">Alias: %s</string>
+    <string name="catchPhrase">Catchphrase: %s</string>
+
+</resources>
