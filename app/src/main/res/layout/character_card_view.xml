@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:src="@tools:sample/avatars"
-            android:contentDescription="@string/a_marvel_character" />
+            android:contentDescription="@string/a_harry_potter_character" />
 
         <TextView
             android:id="@+id/character_name"
@@ -32,31 +32,31 @@
             tools:text="@string/name" />
 
         <TextView
-            android:id="@+id/character_age"
+            android:id="@+id/character_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             app:layout_constraintTop_toBottomOf="@id/character_name"
             app:layout_constraintStart_toEndOf="@+id/character_image"
-            tools:text="@string/age" />
+            tools:text="@string/birthYear" />
 
         <TextView
-            android:id="@+id/character_power"
+            android:id="@+id/character_species"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:layout_constraintTop_toBottomOf="@id/character_age"
+            app:layout_constraintTop_toBottomOf="@id/character_year"
             app:layout_constraintStart_toEndOf="@+id/character_image"
-            tools:text="@string/power" />
+            tools:text="@string/species" />
 
         <TextView
-            android:id="@+id/character_planet"
+            android:id="@+id/character_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:layout_constraintTop_toBottomOf="@id/character_power"
+            app:layout_constraintTop_toBottomOf="@id/character_species"
             app:layout_constraintStart_toEndOf="@+id/character_image"
-            tools:text="@string/planet" />
+            tools:text="@string/gender" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

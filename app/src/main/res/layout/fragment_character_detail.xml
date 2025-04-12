@@ -5,6 +5,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/an_unknown_error_occurred"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="12dp" />
 
     <ImageView
         android:id="@+id/character_image_detail"
@@ -16,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="16dp"
         tools:src="@tools:sample/avatars"
-        android:contentDescription="@string/a_marvel_character" />
+        android:contentDescription="@string/a_harry_potter_character" />
 
     <TextView
         android:id="@+id/character_name_detail"
@@ -28,57 +51,66 @@
         tools:text="@string/name" />
 
     <TextView
-        android:id="@+id/character_age_detail"
+        android:id="@+id/character_year_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_name_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/age" />
+        tools:text="@string/birthYear" />
 
     <TextView
-        android:id="@+id/character_power_detail"
+        android:id="@+id/character_species_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_age_detail"
+        app:layout_constraintTop_toBottomOf="@id/character_year_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/power" />
+        tools:text="@string/species" />
 
     <TextView
-        android:id="@+id/character_planet_detail"
+        android:id="@+id/character_gender_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_power_detail"
+        app:layout_constraintTop_toBottomOf="@id/character_species_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/planet" />
+        tools:text="@string/gender" />
 
     <TextView
-        android:id="@+id/character_enemy_detail"
+        android:id="@+id/character_house_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_planet_detail"
+        app:layout_constraintTop_toBottomOf="@id/character_gender_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/enemy" />
+        tools:text="@string/house" />
 
     <TextView
-        android:id="@+id/character_alias_detail"
+        android:id="@+id/character_ancestry_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_enemy_detail"
+        app:layout_constraintTop_toBottomOf="@id/character_house_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/alias" />
+        tools:text="@string/ancestry" />
 
     <TextView
-        android:id="@+id/character_catchPhrase_detail"
+        android:id="@+id/character_wand_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_alias_detail"
+        app:layout_constraintTop_toBottomOf="@id/character_actor_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="12dp"
-        tools:text="@string/catchPhrase" />
+        tools:text="@string/wand" />
+
+    <TextView
+        android:id="@+id/character_actor_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/character_ancestry_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        tools:text="@string/actor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

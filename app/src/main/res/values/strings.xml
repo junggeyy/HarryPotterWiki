@@ -1,13 +1,15 @@
 <resources>
-    <string name="app_name">ClassApp</string>
+    <string name="app_name">Harry Potter Wiki</string>
     <string name="hello_world">Hello, World!</string>
-    <string name="a_marvel_character">a marvel character</string>
+    <string name="a_harry_potter_character">a harry potter character</string>
     <string name="name">Name: %s</string>
-    <string name="age">Age: %d</string>
-    <string name="power">Power: %s</string>
-    <string name="planet">Planet: %s</string>
-    <string name="enemy">Enemy: %s</string>
-    <string name="alias">Alias: %s</string>
-    <string name="catchPhrase">Catchphrase: %s</string>
+    <string name="birthYear">Birth Year: %d</string>
+    <string name="gender">Gender: %s</string>
+    <string name="species">Species: %s</string>
+    <string name="actor">Played by: %s</string>
+    <string name="an_unknown_error_occurred">Error Occurred</string>
+    <string name="house">House: %s</string>
+    <string name="wand">Wand: %s</string>
+    <string name="ancestry">Ancestry: %s</string>
 
 </resources>
