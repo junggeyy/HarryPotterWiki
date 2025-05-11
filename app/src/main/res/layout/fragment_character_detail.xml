@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_dark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -33,84 +42,81 @@
         android:id="@+id/character_image_detail"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image_frame"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"
-        tools:src="@tools:sample/avatars"
+        android:scaleType="centerCrop"
         android:contentDescription="@string/a_harry_potter_character" />
 
     <TextView
         android:id="@+id/character_name_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:textSize="22sp"
+        android:fontFamily="@font/lumos_regular"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/character_image_detail"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/name" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
 
     <TextView
         android:id="@+id/character_year_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_name_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/birthYear" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/character_species_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_year_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/species" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/character_gender_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_species_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/gender" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/character_house_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_gender_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/house" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/character_ancestry_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_house_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/ancestry" />
-
-    <TextView
-        android:id="@+id/character_wand_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/character_actor_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/wand" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/character_actor_detail"
+        style="@style/DetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/character_ancestry_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="12dp"
-        tools:text="@string/actor" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/character_wand_detail"
+        style="@style/DetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/character_actor_detail"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

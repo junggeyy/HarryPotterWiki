@@ -2,7 +2,7 @@
     <string name="app_name">Harry Potter Wiki</string>
     <string name="hello_world">Hello, World!</string>
     <string name="a_harry_potter_character">a harry potter character</string>
-    <string name="name">Name: %s</string>
+    <string name="name">%s</string>
     <string name="birthYear">Birth Year: %d</string>
     <string name="gender">Gender: %s</string>
     <string name="species">Species: %s</string>
